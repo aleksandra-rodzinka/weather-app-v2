@@ -4,6 +4,54 @@ body {
   color: aliceblue;
 }
 
+h1 {
+  margin-bottom: 5px;
+  font-size: 64px;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+small {
+  margin: 30px auto;
+}
+
 .weather-app-wrapper {
-  border: white;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: lighter;
+}
+
+.weather-temperature .units {
+  position: relative;
+  top: -32px;
 }
