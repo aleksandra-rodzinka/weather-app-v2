@@ -1,3 +1,9 @@
-h1 {
-  color: blue;
+body {
+  font-family: monospace;
+  background-color: #1c1e1f;
+  color: aliceblue;
+}
+
+.weather-app-wrapper {
+  border: white;
 }
