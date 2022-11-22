@@ -67,3 +67,7 @@ small {
 form {
   margin-bottom: 20px;
 }
+
+submit {
+  padding-right: 2px;
+}

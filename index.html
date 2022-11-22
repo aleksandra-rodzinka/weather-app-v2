@@ -24,14 +24,19 @@
               <form id="search-form">
                 <input
                   type="search"
-                  placeholder="Type a city..."
+                  placeholder="Type a city.."
                   class="form-control"
                   id="city-input"
+                  autocomplete="off"
                 />
               </form>
             </div>
             <div class="col-3">
-              <input type="submit" class="btn btn-secondary" />
+              <input
+                type="submit"
+                class="btn btn-secondary"
+                onclick="search()"
+              />
             </div>
           </div>
           <h1 id="city"></h1>
