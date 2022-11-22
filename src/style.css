@@ -63,3 +63,7 @@ small {
 .wind {
   text-transform: lowercase;
 }
+
+form {
+  margin-bottom: 20px;
+}

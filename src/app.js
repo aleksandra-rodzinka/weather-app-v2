@@ -43,3 +43,12 @@ let city = "Varazdin";
 let ApiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=f0c81td68bc7aeb6ae5b7113o45714af&units=metric`;
 
 axios.get(ApiUrl).then(displayTemperature);
+
+function search(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  console.log(cityInputElement);
+}
+
+let form = document.querySelector("search-form");
+form.addEventListener("submit", search);
