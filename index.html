@@ -18,10 +18,10 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1 id="city">Opole</h1>
+          <h1 id="city"></h1>
           <ul>
             <li>Date</li>
-            <li>Weather Conditions</li>
+            <li id="conditions"></li>
           </ul>
           <div class="space"></div>
           <div class="row">
@@ -31,15 +31,14 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 />
                 <div>
-                  <strong id="temperature">12</strong
-                  ><span class="units">°C/°F</span>
+                  <strong id="temp"></strong><span class="units">°C/°F</span>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <ul>
-                <li>Precipitation: 3%</li>
-                <li>Wind: 1m/s</li>
+                <li>Wind: <span class="wind" id="wind"></span> m/s</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
             </div>
           </div>
