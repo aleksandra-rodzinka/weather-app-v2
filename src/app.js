@@ -29,6 +29,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let humidityElement = document.querySelector("#humidity");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
   console.log(response.data);
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
@@ -36,8 +37,9 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   humidityElement.innerHTML = response.data.temperature.humidity;
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+  iconElement.setAttribute("src", `${response.data.condition.icon_url}`);
 }
-let ApiUrl =
-  "https://api.shecodes.io/weather/v1/current?query=Krakow&key=f0c81td68bc7aeb6ae5b7113o45714af&units=metric";
+let city = "Varazdin";
+let ApiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=f0c81td68bc7aeb6ae5b7113o45714af&units=metric`;
 
 axios.get(ApiUrl).then(displayTemperature);
